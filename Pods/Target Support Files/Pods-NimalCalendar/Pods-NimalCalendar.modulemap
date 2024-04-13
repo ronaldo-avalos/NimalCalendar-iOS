@@ -1,0 +1,6 @@
+framework module Pods_NimalCalendar {
+  umbrella header "Pods-NimalCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}

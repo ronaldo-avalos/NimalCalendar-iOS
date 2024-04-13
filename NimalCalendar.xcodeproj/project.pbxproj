@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33106542D91B20260577DF9B /* Pods_NimalCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085F48CC8AD19C8839025F10 /* Pods_NimalCalendar.framework */; };
+		CEF7AE002BCB1DB5007A7D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7ADFF2BCB1DB5007A7D91 /* AppDelegate.swift */; };
+		CEF7AE022BCB1DB5007A7D91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AE012BCB1DB5007A7D91 /* SceneDelegate.swift */; };
+		CEF7AE042BCB1DB5007A7D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AE032BCB1DB5007A7D91 /* ViewController.swift */; };
+		CEF7AE072BCB1DB5007A7D91 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CEF7AE062BCB1DB5007A7D91 /* Base */; };
+		CEF7AE0A2BCB1DB5007A7D91 /* NimalCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AE082BCB1DB5007A7D91 /* NimalCalendar.xcdatamodeld */; };
+		CEF7AE0C2BCB1DB6007A7D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF7AE0B2BCB1DB6007A7D91 /* Assets.xcassets */; };
+		CEF7AE0F2BCB1DB6007A7D91 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CEF7AE0E2BCB1DB6007A7D91 /* Base */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		085F48CC8AD19C8839025F10 /* Pods_NimalCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimalCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A60064E13F8628601A3EFE /* Pods-NimalCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimalCalendar.release.xcconfig"; path = "Target Support Files/Pods-NimalCalendar/Pods-NimalCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		CEF7ADFC2BCB1DB5007A7D91 /* NimalCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimalCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF7ADFF2BCB1DB5007A7D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEF7AE012BCB1DB5007A7D91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEF7AE032BCB1DB5007A7D91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEF7AE062BCB1DB5007A7D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEF7AE092BCB1DB5007A7D91 /* NimalCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NimalCalendar.xcdatamodel; sourceTree = "<group>"; };
+		CEF7AE0B2BCB1DB6007A7D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF7AE0E2BCB1DB6007A7D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEF7AE102BCB1DB6007A7D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C8188857C11D99B4278F8B /* Pods-NimalCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimalCalendar.debug.xcconfig"; path = "Target Support Files/Pods-NimalCalendar/Pods-NimalCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF7ADF92BCB1DB5007A7D91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33106542D91B20260577DF9B /* Pods_NimalCalendar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EDC2C562B76884743291997 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085F48CC8AD19C8839025F10 /* Pods_NimalCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C58E44EC70C5903D3A6A84C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5C8188857C11D99B4278F8B /* Pods-NimalCalendar.debug.xcconfig */,
+				A4A60064E13F8628601A3EFE /* Pods-NimalCalendar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CEF7ADF32BCB1DB5007A7D91 = {
+			isa = PBXGroup;
+			children = (
+				CEF7ADFE2BCB1DB5007A7D91 /* NimalCalendar */,
+				CEF7ADFD2BCB1DB5007A7D91 /* Products */,
+				C58E44EC70C5903D3A6A84C4 /* Pods */,
+				5EDC2C562B76884743291997 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF7ADFD2BCB1DB5007A7D91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF7ADFC2BCB1DB5007A7D91 /* NimalCalendar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF7ADFE2BCB1DB5007A7D91 /* NimalCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				CEF7ADFF2BCB1DB5007A7D91 /* AppDelegate.swift */,
+				CEF7AE012BCB1DB5007A7D91 /* SceneDelegate.swift */,
+				CEF7AE032BCB1DB5007A7D91 /* ViewController.swift */,
+				CEF7AE052BCB1DB5007A7D91 /* Main.storyboard */,
+				CEF7AE0B2BCB1DB6007A7D91 /* Assets.xcassets */,
+				CEF7AE0D2BCB1DB6007A7D91 /* LaunchScreen.storyboard */,
+				CEF7AE102BCB1DB6007A7D91 /* Info.plist */,
+				CEF7AE082BCB1DB5007A7D91 /* NimalCalendar.xcdatamodeld */,
+			);
+			path = NimalCalendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF7ADFB2BCB1DB5007A7D91 /* NimalCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF7AE132BCB1DB6007A7D91 /* Build configuration list for PBXNativeTarget "NimalCalendar" */;
+			buildPhases = (
+				908E94994C5BBA156E82D2CF /* [CP] Check Pods Manifest.lock */,
+				CEF7ADF82BCB1DB5007A7D91 /* Sources */,
+				CEF7ADF92BCB1DB5007A7D91 /* Frameworks */,
+				CEF7ADFA2BCB1DB5007A7D91 /* Resources */,
+				8660D44C9039565F9CB475B2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NimalCalendar;
+			productName = NimalCalendar;
+			productReference = CEF7ADFC2BCB1DB5007A7D91 /* NimalCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF7ADF42BCB1DB5007A7D91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CEF7ADFB2BCB1DB5007A7D91 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = CEF7ADF72BCB1DB5007A7D91 /* Build configuration list for PBXProject "NimalCalendar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEF7ADF32BCB1DB5007A7D91;
+			productRefGroup = CEF7ADFD2BCB1DB5007A7D91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF7ADFB2BCB1DB5007A7D91 /* NimalCalendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF7ADFA2BCB1DB5007A7D91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF7AE0C2BCB1DB6007A7D91 /* Assets.xcassets in Resources */,
+				CEF7AE0F2BCB1DB6007A7D91 /* Base in Resources */,
+				CEF7AE072BCB1DB5007A7D91 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8660D44C9039565F9CB475B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NimalCalendar/Pods-NimalCalendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NimalCalendar/Pods-NimalCalendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NimalCalendar/Pods-NimalCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		908E94994C5BBA156E82D2CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NimalCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF7ADF82BCB1DB5007A7D91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF7AE042BCB1DB5007A7D91 /* ViewController.swift in Sources */,
+				CEF7AE0A2BCB1DB5007A7D91 /* NimalCalendar.xcdatamodeld in Sources */,
+				CEF7AE002BCB1DB5007A7D91 /* AppDelegate.swift in Sources */,
+				CEF7AE022BCB1DB5007A7D91 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEF7AE052BCB1DB5007A7D91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF7AE062BCB1DB5007A7D91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEF7AE0D2BCB1DB6007A7D91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF7AE0E2BCB1DB6007A7D91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF7AE112BCB1DB6007A7D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEF7AE122BCB1DB6007A7D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF7AE142BCB1DB6007A7D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5C8188857C11D99B4278F8B /* Pods-NimalCalendar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YH2276NN43;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NimalCalendar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.coopertec.NimalCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF7AE152BCB1DB6007A7D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4A60064E13F8628601A3EFE /* Pods-NimalCalendar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YH2276NN43;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NimalCalendar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.coopertec.NimalCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF7ADF72BCB1DB5007A7D91 /* Build configuration list for PBXProject "NimalCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF7AE112BCB1DB6007A7D91 /* Debug */,
+				CEF7AE122BCB1DB6007A7D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF7AE132BCB1DB6007A7D91 /* Build configuration list for PBXNativeTarget "NimalCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF7AE142BCB1DB6007A7D91 /* Debug */,
+				CEF7AE152BCB1DB6007A7D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEF7AE082BCB1DB5007A7D91 /* NimalCalendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEF7AE092BCB1DB5007A7D91 /* NimalCalendar.xcdatamodel */,
+			);
+			currentVersion = CEF7AE092BCB1DB5007A7D91 /* NimalCalendar.xcdatamodel */;
+			path = NimalCalendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEF7ADF42BCB1DB5007A7D91 /* Project object */;
+}
