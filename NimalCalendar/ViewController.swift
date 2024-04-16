@@ -43,14 +43,12 @@ class ViewController: UIViewController {
 
         addEventButton.setTitle("Nuevo evento", for: .normal)
         addEventButton.setImage(UIImage(named: "add"), for: .normal)
-        addEventButton.translatesAutoresizingMaskIntoConstraints = false
-        addEventButton.imageView?.contentMode = .scaleAspectFit
-        addEventButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: -70, right: 0)
+        addEventButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -70, bottom: 0, right: 0)
         guard let customFont = UIFont(name:  "Quicksand-Bold", size: 18 ) else {
             return
         }
         addEventButton.titleLabel?.font = customFont
-        addEventButton.setTitleColor(.primary, for: .normal)
+        addEventButton.setTitleColor(.secundary, for: .normal)
         addEventButton.titleLabel?.adjustsFontForContentSizeCategory = true
 
         

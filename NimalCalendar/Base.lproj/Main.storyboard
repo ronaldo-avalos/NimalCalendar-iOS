@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NimalCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-a7-7k3" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="44" width="414" height="741"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="570"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
@@ -27,7 +27,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKs-Co-32m">
-                                <rect key="frame" x="339" y="797" width="55" height="55"/>
+                                <rect key="frame" x="300" y="602" width="55" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="9QZ-C1-Wzv"/>
                                     <constraint firstAttribute="width" constant="55" id="nmT-aB-4sq"/>
@@ -36,15 +36,19 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWR-4v-WvS">
-                                <rect key="frame" x="20" y="797" width="289" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWR-4v-WvS">
+                                <rect key="frame" x="20" y="602" width="200" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="4Pz-dU-Vci"/>
-                                    <constraint firstAttribute="width" constant="129" id="Uu4-jf-XxR"/>
+                                    <constraint firstAttribute="width" constant="200" id="Uu4-jf-XxR"/>
                                 </constraints>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled"/>
+                                <buttonConfiguration key="configuration" style="filled" image="add" title="Nuevo evento"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -54,6 +58,7 @@
                             <constraint firstItem="DWR-4v-WvS" firstAttribute="top" secondItem="ajs-a7-7k3" secondAttribute="bottom" constant="12" id="612-bT-Lxh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nKs-Co-32m" secondAttribute="bottom" constant="10" id="EDC-TS-aM9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DWR-4v-WvS" secondAttribute="bottom" constant="10" id="Fyk-cF-ap5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DWR-4v-WvS" secondAttribute="bottom" constant="10" id="IxZ-ko-hz1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nKs-Co-32m" secondAttribute="trailing" constant="20" id="MXe-kN-VaC"/>
                             <constraint firstItem="ajs-a7-7k3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N23-Re-DzS"/>
                             <constraint firstItem="ajs-a7-7k3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aDb-N7-nzP"/>
@@ -73,6 +78,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
