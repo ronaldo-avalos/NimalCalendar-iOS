@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		33106542D91B20260577DF9B /* Pods_NimalCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085F48CC8AD19C8839025F10 /* Pods_NimalCalendar.framework */; };
+		CE16527E2BCE34DD00D609E3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE16527D2BCE34DD00D609E3 /* Colors.xcassets */; };
+		CE2565242BCE2BD100FE13AA /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2565202BCE2BD100FE13AA /* Quicksand-Bold.ttf */; };
+		CE2565252BCE2BD100FE13AA /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2565212BCE2BD100FE13AA /* Quicksand-SemiBold.ttf */; };
+		CE2565262BCE2BD100FE13AA /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2565222BCE2BD100FE13AA /* Quicksand-Regular.ttf */; };
+		CE2565272BCE2BD100FE13AA /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2565232BCE2BD100FE13AA /* Quicksand-Medium.ttf */; };
 		CEF7AE002BCB1DB5007A7D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7ADFF2BCB1DB5007A7D91 /* AppDelegate.swift */; };
 		CEF7AE022BCB1DB5007A7D91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AE012BCB1DB5007A7D91 /* SceneDelegate.swift */; };
 		CEF7AE042BCB1DB5007A7D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AE032BCB1DB5007A7D91 /* ViewController.swift */; };
@@ -20,6 +25,11 @@
 /* Begin PBXFileReference section */
 		085F48CC8AD19C8839025F10 /* Pods_NimalCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimalCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A60064E13F8628601A3EFE /* Pods-NimalCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimalCalendar.release.xcconfig"; path = "Target Support Files/Pods-NimalCalendar/Pods-NimalCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		CE16527D2BCE34DD00D609E3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CE2565202BCE2BD100FE13AA /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		CE2565212BCE2BD100FE13AA /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		CE2565222BCE2BD100FE13AA /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		CE2565232BCE2BD100FE13AA /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		CEF7ADFC2BCB1DB5007A7D91 /* NimalCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimalCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF7ADFF2BCB1DB5007A7D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF7AE012BCB1DB5007A7D91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +71,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CE25651F2BCE2B6F00FE13AA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CE2565202BCE2BD100FE13AA /* Quicksand-Bold.ttf */,
+				CE2565232BCE2BD100FE13AA /* Quicksand-Medium.ttf */,
+				CE2565222BCE2BD100FE13AA /* Quicksand-Regular.ttf */,
+				CE2565212BCE2BD100FE13AA /* Quicksand-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		CEF7ADF32BCB1DB5007A7D91 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +103,7 @@
 		CEF7ADFE2BCB1DB5007A7D91 /* NimalCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				CE25651F2BCE2B6F00FE13AA /* Font */,
 				CEF7ADFF2BCB1DB5007A7D91 /* AppDelegate.swift */,
 				CEF7AE012BCB1DB5007A7D91 /* SceneDelegate.swift */,
 				CEF7AE032BCB1DB5007A7D91 /* ViewController.swift */,
@@ -90,6 +112,7 @@
 				CEF7AE0D2BCB1DB6007A7D91 /* LaunchScreen.storyboard */,
 				CEF7AE102BCB1DB6007A7D91 /* Info.plist */,
 				CEF7AE082BCB1DB5007A7D91 /* NimalCalendar.xcdatamodeld */,
+				CE16527D2BCE34DD00D609E3 /* Colors.xcassets */,
 			);
 			path = NimalCalendar;
 			sourceTree = "<group>";
@@ -155,8 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF7AE0C2BCB1DB6007A7D91 /* Assets.xcassets in Resources */,
+				CE2565262BCE2BD100FE13AA /* Quicksand-Regular.ttf in Resources */,
+				CE2565272BCE2BD100FE13AA /* Quicksand-Medium.ttf in Resources */,
+				CE2565252BCE2BD100FE13AA /* Quicksand-SemiBold.ttf in Resources */,
 				CEF7AE0F2BCB1DB6007A7D91 /* Base in Resources */,
+				CE16527E2BCE34DD00D609E3 /* Colors.xcassets in Resources */,
 				CEF7AE072BCB1DB5007A7D91 /* Base in Resources */,
+				CE2565242BCE2BD100FE13AA /* Quicksand-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
