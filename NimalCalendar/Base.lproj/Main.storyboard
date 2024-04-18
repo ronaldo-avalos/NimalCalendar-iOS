@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k2L-0r-yTa">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calendar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NimalCalendar" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-a7-7k3" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="20" width="375" height="570"/>
+                                <rect key="frame" x="16" y="64" width="343" height="526"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
@@ -49,6 +49,9 @@
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goToAddEventVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Udg-Jh-eGq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,15 +59,16 @@
                         <constraints>
                             <constraint firstItem="ajs-a7-7k3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0tZ-S3-4Ir"/>
                             <constraint firstItem="DWR-4v-WvS" firstAttribute="top" secondItem="ajs-a7-7k3" secondAttribute="bottom" constant="12" id="612-bT-Lxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ajs-a7-7k3" secondAttribute="trailing" constant="16" id="9Ay-K0-wzP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nKs-Co-32m" secondAttribute="bottom" constant="10" id="EDC-TS-aM9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DWR-4v-WvS" secondAttribute="bottom" constant="10" id="Fyk-cF-ap5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DWR-4v-WvS" secondAttribute="bottom" constant="10" id="IxZ-ko-hz1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nKs-Co-32m" secondAttribute="trailing" constant="20" id="MXe-kN-VaC"/>
-                            <constraint firstItem="ajs-a7-7k3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N23-Re-DzS"/>
-                            <constraint firstItem="ajs-a7-7k3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aDb-N7-nzP"/>
+                            <constraint firstItem="ajs-a7-7k3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aDb-N7-nzP"/>
                             <constraint firstItem="DWR-4v-WvS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cNq-cu-Rlv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Calendar" id="XMa-om-sqD"/>
                     <connections>
                         <outlet property="addEventButton" destination="DWR-4v-WvS" id="BeW-nA-9I0"/>
                         <outlet property="calendarView" destination="ajs-a7-7k3" id="A1b-wM-cEY"/>
@@ -74,7 +78,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15.942028985507248" y="1.3392857142857142"/>
+            <point key="canvasLocation" x="922.39999999999998" y="0.44977511244377816"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UPf-Lt-JEf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k2L-0r-yTa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Li-1f-woJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fmd-6D-WZZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qh8-XL-2cd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16.800000000000001" y="0.44977511244377816"/>
+        </scene>
+        <!--Add Event View Controller-->
+        <scene sceneID="p3v-ZN-igC">
+            <objects>
+                <viewController storyboardIdentifier="AddEventViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vRL-Jq-7Cm" customClass="AddEventViewController" customModule="NimalCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y37-4u-ny1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XKe-od-1Wl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ye0-IM-1gm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="693"/>
         </scene>
     </scenes>
     <resources>
