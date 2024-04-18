@@ -15,6 +15,7 @@
 		CE2565272BCE2BD100FE13AA /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2565232BCE2BD100FE13AA /* Quicksand-Medium.ttf */; };
 		CE7BF85E2BCF615E00B724F4 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BF85D2BCF615E00B724F4 /* AddEventViewController.swift */; };
 		CEA943D82BD0B9F3006B6157 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA943D72BD0B9F3006B6157 /* EventModel.swift */; };
+		CEA943DA2BD0E9BC006B6157 /* PreferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA943D92BD0E9BC006B6157 /* PreferencesManager.swift */; };
 		CEDE25952BCEAFBF0013385B /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE25932BCEAFBF0013385B /* CalendarCell.swift */; };
 		CEDE25962BCEAFBF0013385B /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDE25942BCEAFBF0013385B /* CalendarCell.xib */; };
 		CEF7AE002BCB1DB5007A7D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7ADFF2BCB1DB5007A7D91 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 		CE2565232BCE2BD100FE13AA /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		CE7BF85D2BCF615E00B724F4 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		CEA943D72BD0B9F3006B6157 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		CEA943D92BD0E9BC006B6157 /* PreferencesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesManager.swift; sourceTree = "<group>"; };
 		CEDE25932BCEAFBF0013385B /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		CEDE25942BCEAFBF0013385B /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		CEF7ADFC2BCB1DB5007A7D91 /* NimalCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimalCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 				CEF7AE082BCB1DB5007A7D91 /* NimalCalendar.xcdatamodeld */,
 				CE16527D2BCE34DD00D609E3 /* Colors.xcassets */,
 				CE7BF85D2BCF615E00B724F4 /* AddEventViewController.swift */,
+				CEA943D92BD0E9BC006B6157 /* PreferencesManager.swift */,
 			);
 			path = NimalCalendar;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA943DA2BD0E9BC006B6157 /* PreferencesManager.swift in Sources */,
 				CEF7AE042BCB1DB5007A7D91 /* ViewController.swift in Sources */,
 				CEF7AE0A2BCB1DB5007A7D91 /* NimalCalendar.xcdatamodeld in Sources */,
 				CEF7AE002BCB1DB5007A7D91 /* AppDelegate.swift in Sources */,
