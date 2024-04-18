@@ -23,8 +23,10 @@ class ViewController: UIViewController {
     let settingsButtonWidth : CGFloat = 288
     let settingButtonHeight : CGFloat  = 54
     let textColor: UIColor = UIColor(named: "buttonColor") ?? .primary
-
-    
+    let currentCalendar = Calendar.current
+    let dateLabel = UILabel()
+    let dateFormatter = DateFormatter()
+    var events: [(Date, Event)] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,7 +93,8 @@ class ViewController: UIViewController {
         calendarView.delegate = self
         calendarView.dataSource = self
         calendarView.appearance.headerTitleColor = .button
-        calendarView.appearance.titleSelectionColor = .black
+        calendarView.appearance.titleSelectionColor = .white
+        calendarView.appearance.todayColor = .white
         calendarView.appearance.headerTitleFont = UIFont(name: "Quicksand-Bold", size: 20)
         calendarView.appearance.titleFont = UIFont(name: "Quicksand-SemiBold", size: 16)
 
@@ -115,52 +118,81 @@ extension ViewController: FSCalendarDelegate , FSCalendarDelegateAppearance, FSC
     
     func calendar(_ calendar: FSCalendar, cellFor date: Date, at position: FSCalendarMonthPosition) -> FSCalendarCell {
         let calendarCell = calendar.dequeueReusableCell(withIdentifier: "cell", for: date, at: position)
-        calendarCell.cellBackgroundColor = .primary
+       calendarCell.cellBackgroundColor = .primary
         return calendarCell
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, titleDefaultColorFor date: Date) -> UIColor? {
         return textColor
     }
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+         //   let events = events.filter({$0.0 == date})
+            let currentCalendar = Calendar.current
+            let dayOfMonth = currentCalendar.component(.day, from: date)
+            calendar.select(date, scrollToDate: true)
+        if let cell = calendar.cell(for: date, at: monthPosition) {
+               updateSelectedDateAppearance(cell: cell, date: date, isSelected: true)
+           }
+    }
     
     func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
         if let cell = calendar.cell(for: date, at: monthPosition) {
-           cell.cellBackgroundColor = .secundary
+           cell.cellBackgroundColor = .primary
               updateSelectedDateAppearance(cell: cell, date: date, isSelected: false)
            }
     }
     
     private func updateSelectedDateAppearance(cell: FSCalendarCell, date: Date, isSelected: Bool) {
-        cell.backgroundColor = .clear
-        let calendar = NSCalendar.current
+       cell.backgroundColor = .clear
         let currentDate = Date()
         
-        if calendar.isDate(date, inSameDayAs: currentDate) {
+        if currentCalendar.isDate(date, inSameDayAs: currentDate) {
             cell.layer.cornerRadius =  8
             cell.layer.masksToBounds = true
-            cell.cellBackgroundColor = .red
+            cell.cellBackgroundColor = .systemPink
         }
         
         if cell.isSelected {
             cell.layer.cornerRadius =  8
             cell.layer.masksToBounds = true
-            cell.cellBackgroundColor =  .blue
+            cell.cellBackgroundColor =  .button
         }
-       
-        
+    }
+    
+    func calendar(_ calendar: FSCalendar, willDisplay cell: FSCalendarCell, for date: Date, at monthPosition: FSCalendarMonthPosition) {
+        updateSelectedDateAppearance(cell: cell, date: date, isSelected: cell.isSelected)
     }
     
     
+    func calendar(_ calendar: FSCalendar, shouldSelect date: Date, at monthPosition: FSCalendarMonthPosition) -> Bool {
+        guard let cell = calendar.cell(for: date, at: monthPosition) else { return true }
+        
+        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8) // Comienza con un tamaño más pequeño
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [], animations: {
+            // Realiza la animación de selección aquí
+            cell.transform = CGAffineTransform.identity // Restaura el tamaño original
+            cell.cellBackgroundColor = .systemPink
+        }, completion: nil)
+        
+        return true
+    }
+
+    func calendar(_ calendar: FSCalendar, shouldDeselect date: Date, at monthPosition: FSCalendarMonthPosition) -> Bool {
+        guard let cell = calendar.cell(for: date, at: monthPosition) else { return true }
+        
+        cell.transform = CGAffineTransform(scaleX: 1.2, y: 1.2) // Comienza con un tamaño más grande
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [], animations: {
+            // Realiza la animación de deselección aquí
+            cell.transform = CGAffineTransform.identity // Restaura el tamaño original
+            cell.cellBackgroundColor = .primary
+        }, completion: nil)
+        
+        return true
+    }
+
     
 }
 
-extension FSCalendarCell {
-    var cellBackgroundColor: UIColor? {
-        get {
-            return backgroundView?.backgroundColor
-        }
-        set {
-            backgroundView?.backgroundColor = newValue
-        }
-    }
-}
+

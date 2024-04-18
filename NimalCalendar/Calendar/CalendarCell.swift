@@ -17,7 +17,7 @@ class CalendarCell: FSCalendarCell {
        super.init(frame: CGRect(x: 0, y: 0, width: preferredWidth, height: preferredWidth))
        
        let view = UIView(frame: self.bounds)
-       view.backgroundColor = .secundary
+       view.backgroundColor = .primary
        self.backgroundView = view;
        setupLayers()
        
@@ -41,4 +41,16 @@ class CalendarCell: FSCalendarCell {
        contentView.layer.sublayers?.first?.frame = bounds
    }
 
+}
+
+
+extension FSCalendarCell {
+    var cellBackgroundColor: UIColor? {
+        get {
+            return backgroundView?.backgroundColor
+        }
+        set {
+            backgroundView?.backgroundColor = newValue
+        }
+    }
 }
